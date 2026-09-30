@@ -12,7 +12,16 @@ if [ -d "$HUB/.git" ]; then
   git -C "$HUB" pull -q --no-edit -X union || true
 else
   echo "== cloning shared memory to $HUB"
-  git clone -q "$REPO" "$HUB" || { echo "clone failed — is gh/git logged in?"; exit 1; }
+  # private repo: try gh (uses your gh login), then https, then ssh
+  if command -v gh >/dev/null 2>&1 && gh auth status >/dev/null 2>&1; then
+    gh repo clone DusanCar-sudo/aura-memory "$HUB" -- -q
+  fi
+  [ -d "$HUB/.git" ] || git clone -q "$REPO" "$HUB"
+  [ -d "$HUB/.git" ] || git clone -q "git@github.com:DusanCar-sudo/aura-memory.git" "$HUB"
+  [ -d "$HUB/.git" ] || {
+    echo "clone failed. The repo is private — log in first with:  gh auth login"
+    exit 1
+  }
 fi
 chmod +x "$HUB/bin/"*.sh
 
