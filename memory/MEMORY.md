@@ -1,0 +1,49 @@
+- [ATR in Chrome](atr-web-chrome.md) — run Agent Trace Recorder UI as a web page; C:\Users\dusan\ATR-Web, shim + python server; Start Menu "Agent Trace Recorder (Chrome)"
+- [Update aura from GitHub (Windows)](aura-update-from-github-windows.md) — clone+npm build+`npm i -g .`; no prepare script so direct git install breaks; git at Program Files\Git
+- [Hermes surveillance skill](hermes-surveillance-skill.md) — webcam→Telegram every N min; surstart/surstop; @Herme_duxbot
+- [Google account roles](google-account-roles.md) — milodule3 = main/signups; leanproiq = files & backups
+- [Hermes python ownership fix](hermes-python-ownership-fix.md) — "Permission denied" on hermes's bundled python was broken file ownership, not a broken binary; fixed 2026-09-29
+- [No AI on Vega tasks](feedback_no_ai_on_vega_tasks.md) — hard rule: never do, draft, or cross-check Vega task content; the contract bans Claude outright
+- [User profile](user_profile.md) — Dusan, Vega trace-recording contractor on Windows 11; non-developer, dictates messages
+- [Project Vega workflow](project_vega_workflow.md) — item lifecycle, the html.jsonl DOM-capture bug and its fixes, state of tasks 166/167
+- [Vega materials](reference_vega_materials.md) — where the guides, ATR extension builds, checklist, and support channels live
+- [AURA.md convention](aura-md-convention.md) — AURA.md is the house agent-rules file, root-only, silently truncated at 2000 chars
+- [Surface confusion in repos](aura-surface-confusion.md) — website vs repo page vs app shell share one git tree; agents keep editing the wrong one
+- [Vega LLM restriction](vega-llm-restriction.md) — Project Vega bans Claude/closed-source LLMs on the work; only recorder/OBS infra help allowed
+- [BT audio dies after OBS takes](bt-audio-obs-transport-drop.md) — bluez sink goes SUSPENDED post-recording; bluetoothctl connect or restart wireplumber
+- [Aura 50-day trial automation](aura-50-day-trial-automation.md) — one guarded code path via aura-trial-run.sh; Persistent timer fires on enable; granite-4-h-tiny is the real backend
+- [Coastline Drive game](coastline-drive-game.md) — Android open-world driving game at ~/Projects/coastline-drive; Unity 6 URP, Blender flatpak pipeline, Redmi 15C target
+- [Aura OS project](aura-os-project.md) — Arch+sway OS Aura builds, testbed for tuning Aura; Kubuntu gone 2026-09-24 (see disk migration)
+- [No pkill by name in shared VM](shared-vm-no-pkill-by-name.md) — Aura OS VM runs Aura's live session; scope kills to own PIDs/test runtime dir
+- [VM screenshot privacy](vm-screenshot-privacy.md) — pause VM screenshots while Dusan is on a sign-in/account page
+- [Full autonomy](full-autonomy.md) — use sudo/accounts and just act; never store the password
+- [asusmadre laptop](asusmadre-laptop.md) — mom's Windows laptop over Tailscale 100.92.138.46, key ~/.ssh/asusmadre_ed25519
+- [Solution .md rule](solution-md-rule.md) — write a .md file after solving any nontrivial problem; location/naming TBD
+- [aura-os-shell repo](aura-os-shell-repo.md) — adOS settings menus built in ~/Projects/aura-os-shell; one-column lists, never a bluetoothctl prompt
+- [GitHub warehouse](github-warehouse.md) — github.com/DusanCar-sudo is "raw ideas into finished product"; where our repos live
+- [Build motto](build-motto.md) — "we build to solve anybody's problem"; solving a real human problem is the highest value
+- [Aura OS tool roadmap](aura-os-roadmap-tools.md) — two-pane TUI file manager, Notepad-like TUI editor, clickable popups; "built but never deployed" is the recurring failure
+- [App list rule](app-list-rule.md) — every new Aura OS app gets a .desktop entry in the launcher, always
+- [No wtype on live session](no-wtype-on-live-session.md) — test TUIs in a pty harness; synthetic keys land in whatever window Dusan has focused
+- [Coastline Drive location](coastline-drive-location.md) — repo is at /mnt/bigdata/coastline-drive; assets folder is NOT a duplicate repo; Blender not on this OS half
+- [Aura OS repo topology](aura-os-repo-topology.md) — aura-os-work is canonical for GitHub; /mnt/data/aura-os is a divergent mirror, never push from it
+- [API key = owner responsibility](api-key-owner-responsibility.md) — Aura OS motto; installer asks base URL/model/key per user, no extra key protection
+- [Aura Imprint (confidential)](aura-imprint-project.md) — portable identity + agent + cloud, patent intent; /mnt/bigdata/aura-imprint, never publish
+- [leanproiq.com deploy](leanproiq-deploy.md) — Vercel project aura-water, not v2; deploy a git-archive of site/; sub-pages need absolute asset URLs
+- [Aura on Puter project](aura-chat-puter-project.md) — site chat + shared-memory web client at /mnt/bigdata/aura-chat; where we stopped and what is next
+- [Lenovo headset mic](lenovo-headset-mic-profile.md) — "Lenovo mic" = BT headset; needs HFP profile or mic is dead and room leaks in
+- [Sysmon restyle handoff](handoff-sysmon-restyle.md) — memory tree, network-style graphs, collapsible panels; menus branch 453f586e pushed
+- [adosaura launcher](adosaura-launcher.md) — Aura-OS-style Android launcher at "~/android launcher adosaura", Redmi Note 12 Pro; read docs/RESUME.md first
+- [Aura adOS Android](ados-android-os.md) — Redmi Note 12 Pro: crDroid 12 sweet2 + NikGApps + aura-ados module; unlock pending, plan at /mnt/bigdata/aura-ados-android
+- [Aura retro design](aura-retro-design.md) — ∞K retro identity; leanproiq.com + /ados page, CLI banner, aura-term, READMEs, adOS boot splash; pixel mark kept in 2 places
+- [Aura desktop (Tauri)](aura-desktop-tauri.md) — the goal behind :auraweb: standalone Rust app for Linux+Windows; src-tauri exists, nothing builds it, icons are 0 bytes
+- [:auraweb command](auraweb-command.md) — REPL `:auraweb` / `webaura` binary spawn `aura serve` (port 7337) and open the React `web/` client
+- [aura-code git topology](aura-code-git-topology.md) — local vs GitHub master diverged; git-lfs pre-push hook blocks pushes (use --no-verify)
+- [AuraMemory mirror](auramemory-mirror.md) — C:\AuraMemory\memory is a hand-refreshed copy of this memory dir; overwrite it wholesale when memories change
+- [Disk migration 2026-09-24](disk-migration-2026-09-24.md) — Kubuntu deleted; aura btrfs p9 → new p6 149.4G via btrfs replace; Windows gets ~102G; aura on p6 DONE; p9+p4 deleted 13:15, 102G free awaiting Windows (Aura stays main/default)
+- [Machine layout](machine-layout.md) — Lenovo IdeaPad Slim 5 15ARP10, nvme0n1 953.9G. Dual boot: Aura OS (Arch+sway) is main/default; Windows 11 (p5, 101.3G) installed 2026-09-24 for ONE project only
+- [Project aura memory overview](project-aura-memory-overview.md) — C:\AuraMemory is Dusan's hand-maintained memory tree. Structure: memory/ (35 .md files + MEMORY.md index), root files (HANDOFF.md, 2026-09-24-ubuntu-out-windows
+- [Projects summary](projects-summary.md) — Major projects: (1) Aura OS — Arch+sway OS Dusan's own, repos at ~/Projects on Aura and /mnt/data/aura-os, canonical clone /mnt/bigdata/aura-os-work → github.co
+- [Standing rules](standing-rules.md) — Key standing rules: (1) AURA.md is the house agent-rules file (root-only, silently truncated at 2000 chars, prose not tables). (2) solution-md-rule: after solvi
+- [Telegram bot state](telegram-bot-state.md) — @AuraGazelle_bot runs as FULL bot on BOTH OS. Linux: user unit aura-telegram.service (canonical, source /mnt/bigdata/aura/aura-code), model deepseek/deepseek-v4
+- [User dusan profile](user-dusan-profile.md) — Dusan — contractor recording human computer-use traces for Project Vega (SuperAnnotate) on Windows 11. Non-developer; works by dictation (speech-to-text, so exp
