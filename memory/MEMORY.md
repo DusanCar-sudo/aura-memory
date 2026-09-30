@@ -47,5 +47,3 @@
 - [Standing rules](standing-rules.md) — Key standing rules: (1) AURA.md is the house agent-rules file (root-only, silently truncated at 2000 chars, prose not tables). (2) solution-md-rule: after solvi
 - [Telegram bot state](telegram-bot-state.md) — @AuraGazelle_bot runs as FULL bot on BOTH OS. Linux: user unit aura-telegram.service (canonical, source /mnt/bigdata/aura/aura-code), model deepseek/deepseek-v4
 - [User dusan profile](user-dusan-profile.md) — Dusan — contractor recording human computer-use traces for Project Vega (SuperAnnotate) on Windows 11. Non-developer; works by dictation (speech-to-text, so exp
-- [Memsync roundtrip test](memsync-roundtrip-test.md) — Round-trip probe written by Aura at 2026-09-30T07:13:17.371Z
-- [Memsync reverse test](memsync-reverse-test.md) — Reverse probe written by Claude Code
